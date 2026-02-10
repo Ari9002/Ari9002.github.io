@@ -113,7 +113,7 @@
       output.textContent = "⏳ Anfrage läuft...";
 
       try {
-        const response = await fetch("DEINE_BACKEND_URL_HIER", {
+        const response = await fetch("https://ai-backend.vercel.app/api/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ prompt })
